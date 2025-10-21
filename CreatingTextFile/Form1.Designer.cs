@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtInput
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(64, 53);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 142);
-            this.textBox1.TabIndex = 0;
+            this.txtInput.BackColor = System.Drawing.Color.White;
+            this.txtInput.Location = new System.Drawing.Point(33, 53);
+            this.txtInput.Multiline = true;
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(427, 142);
+            this.txtInput.TabIndex = 0;
             // 
             // btnCreate
             // 
@@ -50,6 +50,7 @@
             this.btnCreate.TabIndex = 1;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // FrmLab1
             // 
@@ -58,7 +59,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(492, 352);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtInput);
             this.Name = "FrmLab1";
             this.Text = "FrmLab1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -69,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnCreate;
     }
 }
