@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace CreatingTextFile
 {
-    public partial class FrmLab1 : Form
+    public partial class FrmFileName : Form
     {
-        public FrmLab1()
+        public FrmFileName()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
